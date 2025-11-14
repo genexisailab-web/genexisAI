@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Laura Zarate";
+  src: url("/fonts/LauraZarate-Variable.woff2") format("woff2"),
+    url("/fonts/LauraZarate-Regular.woff") format("woff");
+  font-weight: 100 700;
+  font-display: swap;
+  font-style: normal;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
+  --background: #0a0413;
+  --foreground: #ffffff;
+  --accent: #4e2a4f;
+  --accent-soft: rgba(133, 66, 181, 0.25);
+  --muted: rgba(255, 255, 255, 0.68);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --font-sans: "Laura Zarate", "Segoe UI", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--background);
+  background-image: radial-gradient(circle at 18% 5%, rgba(106, 54, 128, 0.28), transparent 55%),
+    radial-gradient(circle at 82% -8%, rgba(78, 42, 79, 0.24), transparent 58%),
+    linear-gradient(180deg, #0a0413 0%, #12081f 55%, #190a27 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: auto;
+  width: 520px;
+  height: 520px;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+body::before {
+  top: -150px;
+  left: -160px;
+  background: radial-gradient(circle, rgba(124, 63, 140, 0.42) 0%, rgba(124, 63, 140, 0) 72%);
+}
+
+body::after {
+  bottom: -210px;
+  right: -240px;
+  background: radial-gradient(circle, rgba(86, 44, 112, 0.34) 0%, rgba(86, 44, 112, 0) 72%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: rgba(133, 66, 181, 0.65);
+  color: var(--foreground);
+}
+
+.card-surface {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(
+    140deg,
+    rgba(35, 16, 46, 0.88) 0%,
+    rgba(18, 7, 26, 0.84) 45%,
+    rgba(18, 7, 26, 0.78) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 38px 80px rgba(9, 4, 15, 0.65);
+  backdrop-filter: blur(26px);
+}
+
+.snap-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.snap-container::-webkit-scrollbar {
+  display: none;
 }
