@@ -22,17 +22,17 @@ const principles = [
 
 const leadership = [
   {
-    name: "Harshil Ninama",
+    name: "Harshil",
     title: "Founder & Creative Director",
     bio: "Leads experience design, UX strategy, and brand storytelling. Previously shaped digital platforms for scale-ups in SaaS, fintech, and consumer tech.",
   },
   {
-    name: "Aman Kanojiya",
+    name: "Aman",
     title: "CEO & CTO",
     bio: "Leads both strategic business vision and technical innovation, overseeing operations, partnerships, and technology infrastructure. Combines executive leadership with hands-on technical expertise to scale the agency while delivering cutting-edge solutions.",
   },
   {
-    name: "Shehzad Shaikh",
+    name: "Shehzad",
     title: "AI and Automation Lead",
     bio: "Architects AI-powered solutions and automation systems to streamline workflows and enhance efficiency. Specializes in implementing intelligent technologies that transform business processes.",
   },
@@ -44,11 +44,11 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="An agency built for growth operators."
-        description="Genexsis combines conversion-first design, editorial rigor, and full-funnel acquisition to help ambitious teams capture opportunity faster."
+        description="Genexis combines conversion-first design, editorial rigor, and full-funnel acquisition to help ambitious teams capture opportunity faster."
       />
 
-      <section className="relative py-16 md:flex md:items-center md:justify-center md:snap-center md:py-24">
-        <FadeIn once={false} className="relative mx-auto w-full space-y-12 px-6 sm:px-10 xl:px-20">
+      <section className="relative py-16 sm:py-20 md:flex md:items-center md:justify-center md:snap-center md:py-24">
+        <FadeIn once={false} className="relative mx-auto w-full space-y-8 px-4 sm:space-y-12 sm:px-6 xl:px-20">
           <SectionHeading
             eyebrow="Principles"
             title="How we deliver meaningful change."
@@ -56,7 +56,7 @@ export default function AboutPage() {
           />
 
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-            <article className="relative overflow-hidden rounded-[36px] border border-white/12 bg-gradient-to-br from-[#321844]/82 via-[#1A0C2A]/90 to-[#090214]/96 p-12 text-white shadow-[0_36px_120px_rgba(8,4,20,0.45)]">
+            <article className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#321844]/82 via-[#1A0C2A]/90 to-[#090214]/96 p-6 sm:p-10 text-white shadow-[0_36px_120px_rgba(8,4,20,0.45)]">
               <div className="absolute inset-y-0 left-0 w-[60%] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.18),_transparent_70%)]" />
               <div className="absolute -bottom-24 right-0 h-60 w-60 rounded-full bg-[#552C7A]/32 blur-[150px]" />
               <div className="relative space-y-6">
@@ -83,7 +83,7 @@ export default function AboutPage() {
               {principles.map((principle, index) => (
                 <div
                   key={principle.title}
-                  className="group relative overflow-hidden rounded-[28px] border border-white/12 bg-white/[0.06] p-8 text-white backdrop-blur-xl transition hover:border-white/25"
+                  className="group relative overflow-hidden rounded-[28px] bg-white/[0.06] p-6 sm:p-8 text-white backdrop-blur-xl transition hover:bg-white/[0.10]"
                 >
                   <div className="absolute -right-14 top-1/2 h-36 w-36 -translate-y-1/2 rounded-full bg-[#4C2469]/26 blur-[100px] opacity-80 transition group-hover:opacity-100" />
                   <div className="relative space-y-3">
@@ -114,7 +114,7 @@ export default function AboutPage() {
           <div className="space-y-10">
             {leadership.map((leader, index) => (
               <FadeIn key={leader.name} delay={0.08 * index} once={false}>
-                <article className="relative overflow-hidden rounded-[32px] border border-white/12 bg-gradient-to-br from-[#241134]/88 via-[#150920]/92 to-[#090213]/96 p-10 text-white shadow-[0_28px_90px_rgba(8,4,20,0.45)]">
+                <article className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#241134]/88 via-[#150920]/92 to-[#090213]/96 p-6 sm:p-10 text-white shadow-[0_28px_90px_rgba(8,4,20,0.45)]">
                   <div className="absolute -top-24 right-12 text-7xl font-black uppercase tracking-[0.2em] text-white/6">
                     0{index + 1}
                   </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
             title="Trusted by teams who treat growth as a discipline."
             description="We deliver steady, compound wins by embedding into your operations."
           />
-          <div className="relative overflow-hidden rounded-[32px] border border-white/12 bg-gradient-to-br from-[#2F1550]/78 via-[#170A26]/90 to-[#090214]/96 p-12 text-white shadow-[0_32px_110px_rgba(8,4,20,0.48)]">
+          <div className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#2F1550]/78 via-[#170A26]/90 to-[#090214]/96 p-6 sm:p-10 text-white shadow-[0_32px_110px_rgba(8,4,20,0.48)]">
             <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,_rgba(115,68,170,0.22),_transparent_70%)]" />
             <div className="relative grid gap-8 sm:grid-cols-3">
               {[

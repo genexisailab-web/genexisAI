@@ -7,7 +7,7 @@ export default function TermsPage() {
       <PageHero
         eyebrow="Policies"
         title="Terms & Conditions"
-        description="These terms govern your access to and use of the Genexsis website and services."
+        description="These terms govern your access to and use of the Genexis website and services."
       />
       <section className="py-20 md:flex md:min-h-screen md:items-center md:justify-center md:snap-center">
         <FadeIn once={false} className="w-full max-w-4xl">
@@ -24,7 +24,7 @@ export default function TermsPage() {
                 statements of work and supersede information on this site.
               </li>
               <li>
-                <span className="text-white">Liability:</span> Genexsis is not
+                <span className="text-white">Liability:</span> Genexis is not
                 liable for indirect or consequential damages arising from use of
                 this site or services.
               </li>

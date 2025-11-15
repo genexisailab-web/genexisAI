@@ -36,7 +36,7 @@ export function SiteFooter() {
     <FadeIn
       as={motion.footer}
       once={false}
-      className="relative flex min-h-screen items-center overflow-hidden bg-transparent text-white md:snap-center"
+      className="relative flex min-h-[auto] items-center overflow-hidden bg-obsidian-plum-950 text-white py-16 sm:py-20 md:min-h-screen md:snap-center"
     >
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(8,4,15,0)_0%,rgba(8,4,15,0.8)_55%,rgba(8,4,15,1)_100%)]" />
       <motion.div
@@ -44,43 +44,43 @@ export function SiteFooter() {
         whileInView={{ opacity: 0.06, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 1, ease: [0.2, 0.8, 0.4, 1] }}
-        className="pointer-events-none absolute bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap text-[9rem] font-semibold uppercase tracking-[0.18em] sm:text-[12rem] lg:text-[16rem]"
+        className="pointer-events-none absolute bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap text-6xl font-semibold uppercase tracking-[0.18em] sm:text-8xl lg:text-[16rem]"
       >
-        Genexsis
+        Genexis
       </motion.div>
 
-      <div className="relative mx-auto flex w-full max-w-[1600px] flex-col gap-16 px-6 py-24 md:w-[80vw] md:px-0 lg:w-[75vw] lg:px-0">
-        <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:justify-between">
-          <FadeIn className="max-w-xl space-y-6" delay={0.05}>
-            <div className="flex items-center gap-4">
-              <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/12 text-xl font-semibold">
+      <div className="relative mx-auto flex w-full flex-col gap-12 px-4 py-12 sm:gap-16 sm:px-6 sm:py-16 md:px-8 lg:px-12">
+        <div className="flex flex-col gap-10 sm:gap-12 lg:flex-row lg:items-start lg:justify-between">
+          <FadeIn className="max-w-xl space-y-5 sm:space-y-6" delay={0.05}>
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-[#4E2A4F]/80 to-[#2D1E2F]/80 text-lg font-semibold shadow-lg sm:h-14 sm:w-14 sm:text-xl">
                 GX
               </div>
               <div className="flex flex-col">
-                <span className="text-sm uppercase tracking-[0.35em] text-white/55">
-                  Genexsis
+                <span className="text-xs uppercase tracking-[0.35em] text-white/55 sm:text-sm">
+                  Genexis
                 </span>
-                <span className="text-xl font-semibold text-white">
+                <span className="text-lg font-semibold text-white sm:text-xl">
                   Digital Agency
                 </span>
               </div>
             </div>
-            <p className="text-lg leading-relaxed text-white/78">
+            <p className="text-base leading-relaxed text-white/78 sm:text-lg">
               We craft high-impact websites, evergreen content systems, and
               growth campaigns that keep your pipeline warm. Partner with a team
               engineered for momentum.
             </p>
-            <div className="flex flex-col gap-3 text-sm text-white/70">
+            <div className="flex flex-col gap-2.5 text-sm text-white/70 sm:gap-3">
               <a
                 className="flex items-center gap-3 transition hover:text-white"
-                href="mailto:hello@genexsis.agency"
+                href="mailto:genexis.ailab@gmail.com"
               >
                 <Mail size={18} />
-                genexis.ailab@gmail.com
+                <span className="break-all">genexis.ailab@gmail.com</span>
               </a>
               <a
                 className="flex items-center gap-3 transition hover:text-white"
-                href="tel:+11234567890"
+                href="tel:+916354783970"
               >
                 <Phone size={18} />
                 +91-6354783970  
@@ -92,9 +92,9 @@ export function SiteFooter() {
             </div>
           </FadeIn>
 
-          <div className="grid flex-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
             {footerLinks.map((group, index) => (
-              <FadeIn key={group.title} delay={0.08 * index} className="space-y-5">
+              <FadeIn key={group.title} delay={0.08 * index} className="space-y-4 sm:space-y-5">
                 <p className="text-xs uppercase tracking-[0.32em] text-white/48">
                   {group.title}
                 </p>
@@ -112,7 +112,7 @@ export function SiteFooter() {
                 </ul>
               </FadeIn>
             ))}
-            <FadeIn delay={0.25} className="space-y-5">
+            <FadeIn delay={0.25} className="space-y-4 sm:space-y-5">
               <p className="text-xs uppercase tracking-[0.32em] text-white/48">
                 Follow
               </p>
@@ -121,6 +121,8 @@ export function SiteFooter() {
                   <li key={link.label}>
                     <a
                       href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-3 transition hover:text-white"
                     >
                       <span className="h-1.5 w-1.5 rounded-full bg-white/35" />
@@ -133,9 +135,9 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <FadeIn delay={0.3} className="flex flex-col gap-4 border-t border-white/12 pt-10 text-xs uppercase tracking-[0.3em] text-white/45 md:flex-row md:items-center md:justify-between">
-          <span>© {new Date().getFullYear()} Genexsis. All Rights Reserved.</span>
-          <div className="flex gap-6">
+        <FadeIn delay={0.3} className="flex flex-col gap-4 border-t border-white/12 pt-8 text-xs uppercase tracking-[0.3em] text-white/45 sm:pt-10 md:flex-row md:items-center md:justify-between">
+          <span>© {new Date().getFullYear()} Genexis. All Rights Reserved.</span>
+          <div className="flex gap-4 sm:gap-6">
             <Link href="/privacy" className="transition hover:text-white">
               Privacy
             </Link>

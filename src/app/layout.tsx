@@ -6,22 +6,22 @@ import { SiteFooter } from "@/components/site-footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://genexsis.agency"),
   title: {
-    default: "Genexsis — Digital Agency",
-    template: "%s · Genexsis",
+    default: "Genexis — Digital Agency",
+    template: "%s · Genexis",
   },
   description:
-    "Genexsis designs, edits, and markets powerful websites that amplify growth through targeted digital advertising.",
+    "Genexis designs, edits, and markets powerful websites that amplify growth through targeted digital advertising.",
   openGraph: {
-    title: "Genexsis — Digital Agency",
+    title: "Genexis — Digital Agency",
     description:
       "We design, edit, and market powerful websites, driving growth with targeted digital advertising.",
     type: "website",
     url: "https://genexsis.agency",
-    siteName: "Genexsis",
+    siteName: "Genexis",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Genexsis — Digital Agency",
+    title: "Genexis — Digital Agency",
     description:
       "Website design, content editing, digital marketing, and online advertising with measurable impact.",
   },
@@ -34,12 +34,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-obsidian-plum-950/90 text-white antialiased">
+      <body className="min-h-screen bg-obsidian-plum-950 text-white antialiased">
         <div className="relative flex min-h-screen flex-col">
           <SiteHeader />
-          <main className="flex-1 overflow-hidden">
-            <div className="snap-container flex w-full justify-center md:h-screen md:overflow-y-auto md:snap-y md:snap-mandatory">
-              <div className="mx-auto flex w-full  flex-col gap-24 px-6 py-24  md:gap-0 md:px-0 md:py-0 ">
+          <main className="flex-1 bg-obsidian-plum-950">
+            <div className="flex w-full justify-center md:h-screen md:overflow-y-auto md:snap-y md:snap-mandatory">
+              <div className="mx-auto flex w-full flex-col gap-16 px-4 py-12 sm:gap-20 sm:px-6 sm:py-16 md:gap-0 md:px-0 md:py-0">
                 {children}
                 <SiteFooter />
               </div>

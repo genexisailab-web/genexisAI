@@ -31,8 +31,8 @@ export default function ContactPage() {
         description="Tell us where you want to go. We’ll bring the playbook, team, and execution to get you there."
       />
 
-      <section className="relative py-16 md:flex md:items-center md:justify-center md:snap-center md:py-24">
-        <FadeIn once={false} className="mx-auto w-full space-y-12 px-6 sm:px-10 xl:px-20">
+      <section className="relative py-16 sm:py-20 md:flex md:items-center md:justify-center md:snap-center md:py-24">
+        <FadeIn once={false} className="mx-auto w-full space-y-8 px-4 sm:space-y-12 sm:px-6 xl:px-20">
           <SectionHeading
             eyebrow="Get in touch"
             title="Tell us where you’re headed—we’ll map the path."
@@ -40,7 +40,7 @@ export default function ContactPage() {
           />
 
           <div className="grid gap-10 xl:grid-cols-[1.1fr_0.9fr]">
-            <article className="relative overflow-hidden rounded-[36px] border border-white/12 bg-gradient-to-br from-[#311944]/82 via-[#1A0C2A]/90 to-[#090214]/96 p-12 text-white shadow-[0_38px_120px_rgba(8,4,20,0.45)]">
+            <article className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#311944]/82 via-[#1A0C2A]/90 to-[#090214]/96 p-6 sm:p-10 text-white shadow-[0_38px_120px_rgba(8,4,20,0.45)]">
               <div className="absolute inset-y-0 left-0 w-[55%] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.18),_transparent_70%)]" />
               <div className="absolute -bottom-24 right-0 h-60 w-60 rounded-full bg-[#562C7A]/32 blur-[150px]" />
               <div className="relative space-y-8">
@@ -52,7 +52,7 @@ export default function ContactPage() {
                     Book a 45-minute session with our Team.
                   </h3>
                   <p className="text-lg leading-relaxed text-white/80">
-                    We’ll align on goals, audience, and current stack. You’ll leave with prioritized plays and clarity on how Genexsis will plug in alongside your team.
+                    We'll align on goals, audience, and current stack. You'll leave with prioritized plays and clarity on how Genexis will plug in alongside your team.
                   </p>
                 </div>
                 <ContactForm />
@@ -63,7 +63,7 @@ export default function ContactPage() {
             </article>
 
             <aside className="space-y-8">
-              <div className="relative overflow-hidden rounded-[28px] border border-white/12 bg-white/[0.06] p-8 text-white backdrop-blur-xl">
+              <div className="relative overflow-hidden rounded-[28px] bg-white/[0.06] p-6 sm:p-8 text-white backdrop-blur-xl">
                 <div className="absolute -right-16 top-1/2 h-36 w-36 -translate-y-1/2 rounded-full bg-[#4C2469]/28 blur-[100px]" />
                 <div className="relative space-y-4">
                   <span className="text-xs uppercase tracking-[0.42em] text-white/60">

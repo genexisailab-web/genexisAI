@@ -57,8 +57,8 @@ export default function PortfolioPage() {
         description="We collaborate with ambitious brands to launch immersive websites, sharp content, and efficient growth programs that compound over time."
       />
 
-      <section className="relative py-16 md:flex md:items-center md:justify-center md:snap-center md:py-24">
-        <FadeIn once={false} className="relative mx-auto w-full space-y-12 px-6 sm:px-10 xl:px-20">
+      <section className="relative py-16 sm:py-20 md:flex md:items-center md:justify-center md:snap-center md:py-24">
+        <FadeIn once={false} className="relative mx-auto w-full space-y-8 px-4 sm:space-y-12 sm:px-6 xl:px-20">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-2xl space-y-4">
               <span className="text-xs uppercase tracking-[0.48em] text-white/55">
@@ -81,7 +81,7 @@ export default function PortfolioPage() {
           </div>
 
           <div className="grid gap-8 xl:grid-cols-[1.12fr_0.88fr]">
-            <article className="relative overflow-hidden rounded-[36px] border border-white/12 bg-gradient-to-br from-[#311944]/80 via-[#1A0C2A]/88 to-[#090312]/96 p-12 text-white shadow-[0_38px_120px_rgba(8,3,20,0.45)]">
+            <article className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#311944]/80 via-[#1A0C2A]/88 to-[#090312]/96 p-6 sm:p-10 text-white shadow-[0_38px_120px_rgba(8,3,20,0.45)]">
               <div className="absolute inset-y-0 left-0 w-[60%] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.16),_transparent_70%)]" />
               <div className="absolute -bottom-24 right-0 h-64 w-64 rounded-full bg-[#562C7A]/32 blur-[150px]" />
               <div className="relative flex h-full flex-col justify-between gap-8">
@@ -112,7 +112,7 @@ export default function PortfolioPage() {
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="group relative overflow-hidden rounded-[28px] border border-white/12 bg-white/[0.06] p-10 text-white backdrop-blur-xl transition hover:border-white/25"
+                  className="group relative overflow-hidden rounded-[28px] bg-white/[0.06] p-6 sm:p-8 text-white backdrop-blur-xl transition hover:bg-white/[0.10]"
                 >
                   <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,_rgba(80,40,130,0.24),_transparent_70%)] opacity-60 transition group-hover:opacity-100" />
                   <div className="relative flex flex-col gap-4">
@@ -151,7 +151,7 @@ export default function PortfolioPage() {
               <FadeIn key={cs.id} delay={0.08 * index} once={false}>
                 <article
                   id={cs.id}
-                  className="relative overflow-hidden rounded-[32px] border border-white/12 bg-gradient-to-br from-[#241134]/88 via-[#15091F]/92 to-[#090212]/96 p-10 text-white shadow-[0_28px_90px_rgba(7,3,18,0.45)]"
+                  className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#241134]/88 via-[#15091F]/92 to-[#090212]/96 p-6 sm:p-10 text-white shadow-[0_28px_90px_rgba(7,3,18,0.45)]"
                 >
                   <div className="absolute -top-24 right-12 text-7xl font-black uppercase tracking-[0.18em] text-white/5">
                     0{index + 1}
@@ -204,7 +204,7 @@ export default function PortfolioPage() {
             title="Outcomes we’re trusted to deliver."
             description="These metrics surface in every partnership: speed to launch, clarity across touchpoints, and compounding revenue influence."
           />
-          <div className="relative overflow-hidden rounded-[32px] border border-white/12 bg-gradient-to-br from-[#2E1550]/78 via-[#180A26]/92 to-[#090214]/96 p-12 text-white shadow-[0_32px_110px_rgba(8,4,20,0.48)]">
+          <div className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#2E1550]/78 via-[#180A26]/92 to-[#090214]/96 p-6 sm:p-10 text-white shadow-[0_32px_110px_rgba(8,4,20,0.48)]">
             <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,_rgba(115,68,170,0.22),_transparent_70%)]" />
             <div className="relative grid gap-8 sm:grid-cols-3">
               {[

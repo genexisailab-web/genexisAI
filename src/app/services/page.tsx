@@ -36,11 +36,11 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="One partner for the entire digital journey."
-        description="From first impression to ongoing optimization, Genexsis is your embedded team for experience design, meticulous content, and campaigns that scale."
+        description="From first impression to ongoing optimization, Genexis is your embedded team for experience design, meticulous content, and campaigns that scale."
       />
 
-      <section className="relative py-16 md:flex md:items-center md:justify-center md:snap-center md:py-24">
-        <FadeIn once={false} className="relative mx-auto w-full space-y-12 px-6 sm:px-10 xl:px-20">
+      <section className="relative py-16 sm:py-20 md:flex md:items-center md:justify-center md:snap-center md:py-24">
+        <FadeIn once={false} className="relative mx-auto w-full space-y-8 px-4 sm:space-y-12 sm:px-6 xl:px-20">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-2xl space-y-4">
               <span className="text-xs uppercase tracking-[0.48em] text-white/55">
@@ -63,7 +63,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid gap-8 xl:grid-cols-[1.12fr_0.88fr]">
-            <article className="relative overflow-hidden rounded-[36px] border border-white/12 bg-gradient-to-br from-[#311944]/82 via-[#1A0C2A]/88 to-[#080213]/95 p-12 text-white shadow-[0_38px_120px_rgba(8,3,20,0.45)]">
+            <article className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#311944]/82 via-[#1A0C2A]/88 to-[#080213]/95 p-6 sm:p-10 text-white shadow-[0_38px_120px_rgba(8,3,20,0.45)]">
               <div className="absolute inset-y-0 left-0 w-1/2 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.18),_transparent_70%)]" />
               <div className="absolute -bottom-24 right-0 h-60 w-60 rounded-full bg-[#562C7A]/35 blur-[140px]" />
               <div className="relative flex h-full flex-col justify-between gap-8">
@@ -102,7 +102,7 @@ export default function ServicesPage() {
                 return (
                   <article
                     key={service.id}
-                    className="group relative overflow-hidden rounded-[28px] border border-white/12 bg-white/[0.06] p-8 text-white backdrop-blur-xl transition hover:border-white/25"
+                    className="group relative overflow-hidden rounded-[28px] bg-white/[0.06] p-6 sm:p-8 text-white backdrop-blur-xl transition hover:bg-white/[0.10]"
                   >
                     <div className="absolute -right-14 top-1/2 h-36 w-36 -translate-y-1/2 rounded-full bg-[#4C2469]/28 blur-[100px] opacity-80 transition group-hover:opacity-100" />
                     <div className="relative flex flex-col gap-4">
@@ -155,7 +155,7 @@ export default function ServicesPage() {
             title="Engagement models built around measurable outcomes."
             description="Every partnership begins with a strategy sprint, then operates in high-impact cycles that ship value weekly."
           />
-          <div className="relative overflow-hidden rounded-[32px] border border-white/12 bg-gradient-to-br from-[#2F1550]/80 via-[#170A26]/90 to-[#090214]/96 p-12 text-white shadow-[0_32px_110px_rgba(8,4,20,0.48)]">
+          <div className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#2F1550]/80 via-[#170A26]/90 to-[#090214]/96 p-6 sm:p-10 text-white shadow-[0_32px_110px_rgba(8,4,20,0.48)]">
             <div className="absolute inset-x-0 top-0 h-1/2 bg-[radial-gradient(circle_at_top,_rgba(120,62,160,0.24),_transparent_70%)]" />
             <div className="relative grid gap-10 lg:grid-cols-2">
               {packages.map((pkg) => (
@@ -206,7 +206,7 @@ export default function ServicesPage() {
                 {
                   label: "Qualified Leads",
                   value: "+186%",
-                  detail: "Median increase for Genexsis redesign engagements.",
+                  detail: "Median increase for Genexis redesign engagements.",
                 },
                 {
                   label: "Ad ROI",

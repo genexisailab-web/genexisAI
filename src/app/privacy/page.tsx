@@ -27,7 +27,7 @@ export default function PrivacyPage() {
               retained for no longer than 24 months.
             </p>
             <p>
-              Genexsis complies with GDPR, CCPA, and other applicable regulations.
+              Genexis complies with GDPR, CCPA, and other applicable regulations.
               For detailed documentation or data requests, please contact our
               team.
             </p>

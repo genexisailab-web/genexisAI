@@ -102,7 +102,7 @@ export const process: { title: string; description: string; icon: LucideIcon }[]
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Genexsis rebuilt our web experience and tripled inbound leads in under three months. Their team feels like an extension of ours.",
+      "Genexis rebuilt our web experience and tripled inbound leads in under three months. Their team feels like an extension of ours.",
     name: "Amit Desai",
     role: "Business Owner, kesar dairy",
   },
@@ -124,7 +124,7 @@ export const portfolioHighlights = [
   {
     title: "Kesar Dairy",
     summary: "Dairy Products startup",
-    impact: "The Kesar Dairy Platform has revolutionized our daily operations by digitizing the entire order-to-delivery workflow, delivering remarkable business growth and operational excellence. Since implementation, we've achieved a 67% increase in order processing efficiency through automated daily order management and streamlined workflows. The platform's intelligent inventory tracking system has optimized stock management, resulting in a 20% reduction in waste and improved product availability. Real-time delivery tracking and route optimization features have enhanced delivery performance, leading to a 78% improvement in on-time delivery rates and increased customer satisfaction. The integrated wallet system and seamless payment processing have boosted transaction completion rates by 20%, while automated daily reminders and push notifications have improved customer engagement and repeat orders. Comprehensive analytics dashboards provide actionable insights that have optimized pricing strategies and inventory planning. The mobile-first Progressive Web App design ensures accessibility across all devices, contributing to a 90% increase in mobile order conversions. These optimizations, combined with features like automated order processing, delivery assignment algorithms, and comprehensive reporting tools, have positioned Kesar Dairy as a modern, technology-driven dairy service provider, enabling scalable growth while maintaining exceptional customer service standards.",
+    impact: "67% increase in order processing efficiency, 78% improvement in on-time delivery rates, and 90% increase in mobile order conversions through digitized order-to-delivery workflow.",
     href: "/portfolio#kesardairy",
   },
   {
