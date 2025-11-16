@@ -40,10 +40,10 @@ export default function ContactPage() {
           />
 
           <div className="grid gap-10 xl:grid-cols-[1.1fr_0.9fr]">
-            <article className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#311944]/82 via-[#1A0C2A]/90 to-[#090214]/96 p-6 sm:p-10 text-white shadow-[0_38px_120px_rgba(8,4,20,0.45)]">
-              <div className="absolute inset-y-0 left-0 w-[55%] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.18),_transparent_70%)]" />
-              <div className="absolute -bottom-24 right-0 h-60 w-60 rounded-full bg-[#562C7A]/32 blur-[150px]" />
-              <div className="relative space-y-8">
+            <article className="relative overflow-visible rounded-none bg-transparent p-0 text-white sm:overflow-hidden sm:rounded-[36px] sm:bg-gradient-to-br sm:from-[#311944]/82 sm:via-[#1A0C2A]/90 sm:to-[#090214]/96 sm:p-10 sm:shadow-[0_38px_120px_rgba(8,4,20,0.45)]">
+              <div className="hidden sm:block absolute inset-y-0 left-0 w-[55%] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.18),_transparent_70%)]" />
+              <div className="hidden sm:block absolute -bottom-24 right-0 h-60 w-60 rounded-full bg-[#562C7A]/32 blur-[150px]" />
+              <div className="relative space-y-8 sm:space-y-8 px-0 sm:px-0">
                 <div className="space-y-3">
                   <span className="text-xs uppercase tracking-[0.42em] text-white/55">
                     Strategy call

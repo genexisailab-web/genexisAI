@@ -8,8 +8,8 @@ import { Button } from "./ui/button";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Portfolio", href: "/portfolio" },
+  { label: "Services", href: "/#services" },
+  // { label: "Portfolio", href: "/portfolio" }, // temporarily removed
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -43,7 +43,7 @@ export function SiteHeader() {
         <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between gap-4 px-4 py-4 text-white sm:px-6 sm:py-5 md:w-[80vw] md:px-0 lg:w-[75vw] lg:px-0">
           <Link href="/" onClick={close} className="flex items-center gap-3">
             <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[#4E2A4F]/80 to-[#2D1E2F]/80 text-base font-semibold shadow-lg sm:h-12 sm:w-12 sm:text-lg">
-              GX
+              G|X
             </div>
             <div className="hidden flex-col leading-tight sm:flex">
               <span className="text-xs uppercase tracking-[0.32em] text-white/55 sm:text-sm">

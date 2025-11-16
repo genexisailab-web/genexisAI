@@ -42,9 +42,9 @@ export function Hero() {
           <Button asChild size="lg" variant="primary" className="w-full sm:w-auto">
             <Link href="/contact">Start a project</Link>
           </Button>
-          <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
+          {/* <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
             <Link href="/portfolio">View portfolio</Link>
-          </Button>
+          </Button> */}
         </motion.div>
 
         <motion.div

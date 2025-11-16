@@ -251,7 +251,7 @@ export default function Home() {
               </p>
             </div>
             <Link
-              href="/portfolio"
+              href="/contact"
               className="inline-flex items-center gap-2 self-start rounded-full border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.38em] text-white/65 transition hover:border-white/40 hover:text-white"
             >
               View all work
@@ -274,22 +274,17 @@ export default function Home() {
                 <p className="text-sm font-medium text-white/85 sm:text-base">
                   {featuredHighlight.impact}
                 </p>
-                <Link
-                  href={featuredHighlight.href}
-                  className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-white/80 transition hover:text-white"
-                >
+                <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-white/50">
                   Read the full story
-                  <span aria-hidden="true">→</span>
-                </Link>
+                </span>
               </div>
             </article>
 
             <div className="grid gap-6">
               {supportingHighlights.map((item) => (
-                <Link
+              <div
                   key={item.title}
-                  href={item.href}
-                  className="group relative overflow-hidden rounded-3xl bg-white/[0.06] p-6 sm:p-8 text-white backdrop-blur-xl transition hover:bg-white/[0.10]"
+                  className="group relative overflow-hidden rounded-3xl bg-white/[0.06] p-6 sm:p-8 text-white backdrop-blur-xl transition"
                 >
                   <div className="absolute -right-16 top-0 h-40 w-40 rounded-full bg-[#4F266D]/25 blur-[90px] transition group-hover:opacity-90" />
                   <div className="relative flex flex-col gap-4">
@@ -301,12 +296,11 @@ export default function Home() {
                     <p className="text-sm font-medium text-white/80 sm:text-base">
                       {item.impact}
                     </p>
-                    <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-white/70 transition group-hover:text-white">
+                    <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-white/50">
                       View outcome
-                      <span aria-hidden="true">→</span>
                     </span>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </div>

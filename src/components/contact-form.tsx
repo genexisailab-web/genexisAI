@@ -66,7 +66,11 @@ export function ContactForm() {
   };
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit} className="card-surface space-y-6 rounded-3xl p-6 sm:p-10 text-white">
+    <form
+      ref={formRef}
+      onSubmit={handleSubmit}
+      className="card-surface space-y-5 rounded-3xl p-5 sm:space-y-6 sm:p-10 text-white"
+    >
       {submitStatus.type && (
         <div
           className={`rounded-2xl px-4 py-3 text-sm ${
@@ -86,7 +90,7 @@ export function ContactForm() {
             type="text"
             name="name"
             placeholder="Your name"
-            className="rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-base text-white placeholder:text-white/30 backdrop-blur focus:border-white/40 focus:outline-none"
+            className="w-full rounded-2xl border border-white/25 bg-white/10 px-4 py-3.5 text-[16px] text-white placeholder:text-white/60 focus:border-white/50 focus:outline-none"
             required
             disabled={isSubmitting}
           />
@@ -97,7 +101,7 @@ export function ContactForm() {
             type="text"
             name="company"
             placeholder="Brand or organization"
-            className="rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-base text-white placeholder:text-white/30 backdrop-blur focus:border-white/40 focus:outline-none"
+            className="w-full rounded-2xl border border-white/25 bg-white/10 px-4 py-3.5 text-[16px] text-white placeholder:text-white/60 focus:border-white/50 focus:outline-none"
             disabled={isSubmitting}
           />
         </label>
@@ -107,7 +111,7 @@ export function ContactForm() {
             type="email"
             name="email"
             placeholder="name@company.com"
-            className="rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-base text-white placeholder:text-white/30 backdrop-blur focus:border-white/40 focus:outline-none"
+            className="w-full rounded-2xl border border-white/25 bg-white/10 px-4 py-3.5 text-[16px] text-white placeholder:text-white/60 focus:border-white/50 focus:outline-none"
             required
             disabled={isSubmitting}
           />
@@ -118,7 +122,7 @@ export function ContactForm() {
             type="text"
             name="timeline"
             placeholder="When would you like to launch?"
-            className="rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-base text-white placeholder:text-white/30 backdrop-blur focus:border-white/40 focus:outline-none"
+            className="w-full rounded-2xl border border-white/25 bg-white/10 px-4 py-3.5 text-[16px] text-white placeholder:text-white/60 focus:border-white/50 focus:outline-none"
             disabled={isSubmitting}
           />
         </label>
@@ -127,14 +131,14 @@ export function ContactForm() {
         Project goals
         <textarea
           name="goals"
-          rows={5}
+          rows={6}
           placeholder="Tell us about the website, marketing, or advertising outcomes you want."
-          className="rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-base text-white placeholder:text-white/30 backdrop-blur focus:border-white/40 focus:outline-none resize-none"
+          className="w-full rounded-2xl border border-white/25 bg-white/10 px-4 py-3.5 text-[16px] text-white placeholder:text-white/60 focus:border-white/50 focus:outline-none resize-none"
           disabled={isSubmitting}
         />
       </label>
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <label className="flex items-center gap-3 text-xs text-white/60">
+        <label className="flex items-center gap-3 text-xs text-white/70">
           <input
             type="checkbox"
             name="newsletter"
