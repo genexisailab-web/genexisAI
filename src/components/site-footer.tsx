@@ -1,6 +1,7 @@
  'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { FadeIn } from "@/components/fade-in";
@@ -54,7 +55,13 @@ export function SiteFooter() {
           <FadeIn className="max-w-xl space-y-5 sm:space-y-6" delay={0.05}>
             <div className="flex items-center gap-3 sm:gap-4">
               <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-[#4E2A4F]/80 to-[#2D1E2F]/80 text-lg font-semibold shadow-lg sm:h-14 sm:w-14 sm:text-xl">
-                GX
+                <Image
+                  src="/Picsart_25-11-16_13-59-49-794.png"
+                  alt="Genexis logo"
+                  width={56}
+                  height={56}
+                  className="h-12 w-12 rounded-xl object-contain sm:h-14 sm:w-14"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-xs uppercase tracking-[0.35em] text-white/55 sm:text-sm">
